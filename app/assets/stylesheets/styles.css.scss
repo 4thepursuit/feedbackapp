@@ -1,0 +1,44 @@
+/*you could change the font */
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+$btnPrimaryBackground: blue;
+$navbarBackgroundHighLight: white;
+$navbarBackground: white;
+$herounitBackground: white;
+
+@import 'bootstrap';
+
+body{
+
+	
+	padding-top: 60px;
+	color: #333333;
+	margin: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  background-color: #A0E1FF
+  /*D0E0EB*/
+
+}
+@import 'bootstrap-responsive';
+
+ .hero-unit {
+  	background-color: #ffffff;
+} 
+
+	.navbar-inner {
+		/*@include box-shadow(none !important);*/
+		border: 0;
+} 
+
+.footer {
+
+	margin-top: 50px;
+
+color: $grayLight;
+a{
+	color: $gray;
+	}
+}

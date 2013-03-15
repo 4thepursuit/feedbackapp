@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<head>
+	<head>
   <title>Feedbackapp</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -8,7 +8,10 @@
 </head>
 <body>
 
-<%= yield %>
+<%= render 'layouts/header' %>
 
+<div class="container">
+	<%= yield %>
+</div>
 </body>
 </html>
