@@ -9,7 +9,7 @@ gem 'devise'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 group :production do
-  gem 'therubyracer', '~> 0.9.3.beta1'
+  gem 'pg'
 end
 
 
