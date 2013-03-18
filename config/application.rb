@@ -11,6 +11,20 @@ end
 
 module Feedbackapp
   class Application < Rails::Application
+
+  config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => "http://warm-atoll-9769.herokuapp.com/about",
+  :user_name            => "reedcaleb@gmail.com",
+  :password             => "blah",
+  :authentication       => :plain,
+  :enable_starttls_auto => true
+    }
+
+  config.action_mailer.default_url_options = {
+    :host => "http://warm-atoll-9769.herokuapp.com"
+    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
