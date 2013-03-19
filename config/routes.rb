@@ -4,7 +4,9 @@ Feedbackapp::Application.routes.draw do
 
   get 'about' => 'pages#about'
 
-  root :to =>'pages#home'
+  root :to =>'contact#new'
+  #pages#home
+  
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

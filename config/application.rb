@@ -15,15 +15,15 @@ module Feedbackapp
   config.action_mailer.smtp_settings = {
   :address              => "smtp.gmail.com",
   :port                 => 587,
-  :domain               => "http://warm-atoll-9769.herokuapp.com/about",
+  :domain               => "localhost:3000",
   :user_name            => "reedcaleb@gmail.com",
-  :password             => "blah",
+  :password             => "Fuzzy@cat33",
   :authentication       => :plain,
   :enable_starttls_auto => true
     }
 
   config.action_mailer.default_url_options = {
-    :host => "http://warm-atoll-9769.herokuapp.com"
+    :host => "localhost:3000"
     }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
