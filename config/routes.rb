@@ -2,11 +2,16 @@ Feedbackapp::Application.routes.draw do
 
   devise_for :users
 
+  
+  get 'feedback' => 'feedback#new'
+
   get 'about' => 'pages#about'
 
   root :to =>'contact#new'
   #pages#home
   
+  match 'feedback' => 'feedback#new', :as => 'feedback', :via => :get
+  match 'feedback' => 'feedback#create', :as => 'feedback', :via => :post
 
   match 'contact' => 'contact#new', :as => 'contact', :via => :get
   match 'contact' => 'contact#create', :as => 'contact', :via => :post

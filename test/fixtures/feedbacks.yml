@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  professorname: MyString
+  email: MyString
+  positivefeedback: MyString
+  tobeimprovedfeedback: MyString
+
+two:
+  professorname: MyString
+  email: MyString
+  positivefeedback: MyString
+  tobeimprovedfeedback: MyString
