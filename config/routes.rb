@@ -1,5 +1,8 @@
 Feedbackapp::Application.routes.draw do
 
+  resources :profs
+
+
   devise_for :users
 
   
@@ -7,7 +10,7 @@ Feedbackapp::Application.routes.draw do
 
   get 'about' => 'pages#about'
 
-  root :to =>'contact#new'
+  root :to =>'pages#about'
   #pages#home
   
   match 'feedback' => 'feedback#new', :as => 'feedback', :via => :get

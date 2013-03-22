@@ -16,6 +16,16 @@ Please enter professor feedback
 
 <% end %>
 
+<hr>
+Display all professor feedback information <br />
+<% if !@feedbacks.blank? %>
+  <% for item in @feeedbacks %>
+  <%= item.professorname %> <%= item.positivefeedbak %> <%= item.tobeimprovedfeedback %> <br />
+  <% end %>
+<% else %>
+<% end %>
+
+
  </div>
     <div class="span3">
     </div>

@@ -1,6 +1,7 @@
 class FeedbackController < ApplicationController
 	def new
 		@feedback = Feedback.new
+		@feedbacks = Feedback.find(:all)
 			end
 # allows creation of form
 	def create

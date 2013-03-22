@@ -1,13 +1,81 @@
 /*you could change the font */
-/*$baseFontFamily: Oxygen;
-@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+/*$baseFontFamily: monofett;
+@import url(http://fonts.googleapis.com/css?family=monofett);*/
 
-$btnPrimaryBackground: blue;
-$navbarBackgroundHighLight: white;
-$navbarBackground: white;
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+$navbarText: #7490BC;
+$navbarLinkColor: #FFFFFF;
+$navbarLinkColorHover: white;
+$navbarLinkColorActive: white;
+$navbarLinkBackgroundHover: transparent;
+$navbarLinkBackgroundActive: white;
+
+$navbarSearchPlaceholderColor: white;
+$navbarBrandColor: white;
+
+$btnPrimaryBackground: #469dee;
+$navbarBackgroundHighLight: #c0deed;
+$navbarBackground: #c0deed;
 $herounitBackground: white;
 
 @import 'bootstrap';
+
+/*.navbar-inner { */
+		/*@include box-shadow(none !important);*/
+	/*	border: 0; */
+		/* background-color: #0084b4} */
+
+.navbar-inner {
+background: #469dee; /* Old browsers */
+background: -moz-linear-gradient(top, #469dee 0%, #1c7cea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#469dee), color-stop(100%,#1c7cea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* IE10+ */
+background: linear-gradient(to bottom, #469dee 0%,#1c7cea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', endColorstr='#1c7cea',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar-inner, .navbar .btn-navbar { 
+background: #469dee; /* Old browsers */
+background: -moz-linear-gradient(top, #469dee 0%, #1c7cea 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#469dee), color-stop(100%,#1c7cea)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top, #469dee 0%,#1c7cea 100%); /* IE10+ */
+background: linear-gradient(to bottom, #469dee 0%,#1c7cea 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', endColorstr='#1c7cea',GradientType=0 ); /* IE6-9 */
+}
+
+.navbar .divider-vertical {
+	background-color: #1c7cea;
+  border-right: 1px solid #469dee;
+}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {
+    background-color: #ffffff;
+    }
+
+.navbar .nav > li > a {
+		/*float: none;*/
+    /*line-height: 19px;*/
+    /*padding: 9px 10px 11px;*/
+    text-decoration: none;
+    text-shadow: white 0.1px 0.1px 0.2px;
+    color: white;
+    }
+
+    .navbar-fixed-top .brand {
+    text-shadow: white 0.1px 0.1px 0.2px;
+    color: #1c7cea;color: #ffffff;
+    }
+    /* need to fix, change to 50% of color of gradient and shift to white */
+
+.navbar .nav > li > a:hover {color:white;}
+
+.navbar .nav .active > a, .navbar .nav .active > a:hover {color:white;}
+
 
 body{
 
@@ -15,10 +83,12 @@ body{
 	padding-top: 60px;
 	color: #333333;
 	margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 20px;
-  background-color: #A0E1FF
+  background-color: #c0deed
+  /*#E0EEF5*/
+  /*#A0E1FF*/
   /*D0E0EB*/
 
 }
@@ -28,10 +98,7 @@ body{
   	background-color: #ffffff;
 } 
 
-	.navbar-inner {
-		/*@include box-shadow(none !important);*/
-		border: 0;
-} 
+
 
 .footer {
 
