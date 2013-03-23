@@ -10,7 +10,9 @@ Feedbackapp::Application.routes.draw do
 
   get 'about' => 'pages#about'
 
-  root :to =>'pages#about'
+  get 'professors' => 'pages#professors'
+
+  root :to =>'pages#home'
   #pages#home
   
   match 'feedback' => 'feedback#new', :as => 'feedback', :via => :get
