@@ -3,12 +3,19 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :email %>
+    <%= f.input :email, :as => :grouped_select, :collection => [['Professors', ['reedcaleb@gmail.com', 'Carlos']], ['General', ['Bob', 'John']]], :group_method => :last %> 
     <%= f.input :pro %>
     <%= f.input :con %>
-  </div>
+   <p>
+   
+</p>
+
+   </div>
+
 
   <div class="form-actions">
     <%= f.button :submit %>
   </div>
+<%= @user = @prof.build_user(:pemail => :email) %>
+<%= @user = @prof.create_user(:pemail =>:email) %>
 <% end %>

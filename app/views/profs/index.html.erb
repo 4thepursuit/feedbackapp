@@ -1,3 +1,4 @@
+<% if current_user == @prof.user %>
 <h1>Listing profs</h1>
 
 <table>
@@ -27,3 +28,5 @@
 <br />
 
 <%= link_to 'New Prof', new_prof_path %>
+
+<% end %>

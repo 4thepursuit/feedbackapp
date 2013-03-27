@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
 
+ 
 <p>
   <b>Name:</b>
   <%= @prof.name %>
@@ -20,6 +21,7 @@
   <%= @prof.con %>
 </p>
 
-
-<%= link_to 'Edit', edit_prof_path(@prof) %> |
-<%= link_to 'Back', profs_path %>
+<% if current_user == @prof.user %>
+<%= link_to 'Edit', edit_prof_path(@prof) %> 
+<% end %>
+<%= link_to 'Back', new_prof_path %>
