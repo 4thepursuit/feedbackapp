@@ -9,6 +9,8 @@ gem 'simple_form'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
+gem 'activeadmin'
+
 group :production do
   gem 'pg'
 end
