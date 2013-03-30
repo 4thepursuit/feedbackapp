@@ -2,7 +2,7 @@
 /*$baseFontFamily: monofett;
 @import url(http://fonts.googleapis.com/css?family=monofett);*/
 
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro);
+@import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
 $navbarText: #7490BC;
 $navbarLinkColor: #FFFFFF;
@@ -79,11 +79,104 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', end
 
 body{
 
+
+img.front-image {
+min-height: 100%;
+min-width: 1024px;
+width: 100%;
+height: auto;
+position: fixed;
+top: 0;
+left: 0;
+z-index: -9999;
+}
+
+.front-card {
+width: 838px;
+height: 328px;
+position: absolute;
+left: 50%;
+top: 50%;
+margin-left: -419px;
+margin-top: -164px;
+}
+
+.front-welcome {
+position: absolute;
+top: 0;
+left: 0;
+display: block;
+width: 520px;
+height: 328px;
+border: 0;
+}
+
+.front-welcome-text {
+position: absolute;
+bottom: 50%;
+left: 0;
+width: 470px;
+font-size: 20px;
+font-weight: 300;
+line-height: 22px;
+color: #EEE;
+text-align: left;
+text-shadow: black 0 1px 2px;
+}
+
+.front-signup {
+position: absolute;
+top: 50%;
+margin-top: -103px;
+left: 536px;
+width: 300px;
+height: 206px;
+background: white;
+background-color: #f1f1f1;
+background-image: -webkit-linear-gradient(top, #fff, #ddd);
+background-repeat: repeat-x;
+border-radius: 4px;
+}
+
+.front-signup h2 {
+position: relative;
+display: block;
+text-align: left;
+padding: 10px 12px;
+margin-bottom: 30px;
+font-size: 16px;
+font-weight: 300;
+color: #777;
+border-bottom: 1px solid #E2E2E2;
+-webkit-box-shadow: 0 1px 0 #fff;
+-moz-box-shadow: 0 1px 0 #fff;
+box-shadow: 0 1px 0 #fff;
+text-shadow: 0 1px 0 white;
+}
+
+.front-signup .btn {
+position: absolute;
+top: 50%;
+right: 50%;
+margin: -18px -58px 0 0;
+padding: 11px 19px;
+font-size: 20px;
+-webkit-border-radius: 6px;
+-moz-border-radius: 6px;
+border-radius: 6px;
+}
+.btn {
+display: inline-block;
+line-height: 20px;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+}
 	
 	padding-top: 60px;
 	color: #333333;
 	margin: 0;
-	font-family: 'Source Sans Pro', sans-serif;  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;  /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
   font-size: 14px;
   line-height: 20px;
   background-color: #c0deed
