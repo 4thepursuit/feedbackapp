@@ -63,12 +63,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', end
     /*line-height: 19px;*/
     /*padding: 9px 10px 11px;*/
     text-decoration: none;
-    text-shadow: white 0.1px 0.1px 0.2px;
+    text-shadow: black 0.1px 1px 2px;
     color: white;
     }
 
     .navbar-fixed-top .brand {
-    text-shadow: white 0.1px 0.1px 0.2px;
+    text-shadow: black 0.1px 1px 2px;
     color: #1c7cea;color: #ffffff;
     }
     /* need to fix, change to 50% of color of gradient and shift to white */
@@ -76,13 +76,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', end
 .navbar .nav > li > a:hover {color:white;}
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover {color:white;}
-
-head{
-  
-  <link rel="shortcut icon" href="public/images/favicon_grumpy_cat_final.ico"/>
-
-
-}
 
 body{
 
@@ -103,10 +96,11 @@ width: 838px;
 height: 328px;
 position: absolute;
 left: 50%;
-top: 50%;
-margin-left: -419px;
-margin-top: -164px;
+top: 300px;
+/*margin-left: -419px;*/
+/*margin-top: -164px;*/
 }
+
 
 .front-welcome {
 position: absolute;
