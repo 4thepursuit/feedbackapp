@@ -4,6 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Ubuntu);
 
+
 $navbarText: #7490BC;
 $navbarLinkColor: #FFFFFF;
 $navbarLinkColorHover: white;
@@ -76,6 +77,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', end
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover {color:white;}
 
+head{
+  
+  <link rel="shortcut icon" href="public/images/favicon_grumpy_cat_final.ico"/>
+
+
+}
 
 body{
 
@@ -113,7 +120,7 @@ border: 0;
 
 .front-welcome-text {
 position: absolute;
-bottom: 50%;
+bottom: 30%;
 left: 0;
 width: 470px;
 font-size: 20px;
@@ -165,6 +172,7 @@ font-size: 20px;
 -moz-border-radius: 6px;
 border-radius: 6px;
 }
+
 .btn {
 display: inline-block;
 line-height: 20px;
