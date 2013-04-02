@@ -1,14 +1,18 @@
-<h1>Listing profs</h1>
+<div class="hero-unit">
+<h1>Student Feedback</h1>
+<br></br>
 
-<table>
+<table class="table table-hover">
   <tr>
-    <th>Name</th>
-    <th>Email</th>
-    <th>Pro</th>
-    <th>Con</th>
     <th></th>
-    <th></th>
-    <th></th>
+    <th>Professor Name</th>
+    <th>Professor Email</th>
+    <th>What is working?</th>
+    <th>What could be improved?</th>
+    <th>Timestamp</th>
+    <th> </th>
+    <th> </th>
+    <th> </th>
   </tr>
 
 <% @profs.each do |prof| %>
@@ -19,6 +23,7 @@
     <td><%= prof.email %></td>
     <td><%= prof.pro %></td>
     <td><%= prof.con %></td>
+    <td><%= prof.created_at %></td>
     <td><%= link_to 'Show', prof %></td>
     <td><%= link_to 'Edit', edit_prof_path(prof) %></td>
     <td><%= link_to 'Destroy', prof, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -29,5 +34,6 @@
 
 <br />
 
-<%= link_to 'New Prof', new_prof_path %>
+<%= link_to 'Home', root_path %>
+</div>
 

@@ -7,10 +7,10 @@
       
       <%= simple_form_for @message, :url => contact_path do |f| %>
           
-          <%= f.input :name, :label => 'Professor Name' %>
+          <%= f.input :name, :label => 'Name' %>
           <%= f.input :email %>         
           <%= f.input :subject %>
-          <%= f.input :body %>
+          <%= f.input :body, as: :text, input_html: { rows: 3 } %>
           <%= f.button :submit %>
 
       <% end %>

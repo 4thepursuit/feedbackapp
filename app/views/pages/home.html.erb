@@ -6,11 +6,21 @@
       <div class="front-card">
         <div class="front-welcome">
           <div class="front-welcome-text">
+
+            <% if user_signed_in? %>
+            <h1>View Student Feedback!</h1>
+            <p> We have provided students suggestions on how to provide relevant and useful feedback so that you know what works and what doesn't!</p>
+            <p>
+            <a href="/profs" class="btn btn-primary btn-large"> View Feedback </a> 
+
+            <% else %>
+
             <h1>Communicate Anonymously with Professors</h1>
             <p> Help professors improve the learning environment by giving them real time, anonymous feedback </p>
             <p>
             <a href="/profs/new" class="btn btn-primary btn-large"> Give Feedback </a> 
 
+            <% end %>
           </div>
         </div> 
       </div>
