@@ -3,8 +3,7 @@ class Prof < ActiveRecord::Base
 
 validates :name, presence: true
 validates :email, presence: true
-validates :pro, presence: true
-validates :con, presence: true
+
 
 belongs_to :user
 has_attached_file :image

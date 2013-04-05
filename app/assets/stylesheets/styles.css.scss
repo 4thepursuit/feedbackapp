@@ -27,6 +27,18 @@ $herounitBackground: white;
 	/*	border: 0; */
 		/* background-color: #0084b4} */
 
+.navbar .brand-logo {
+float: left;
+display: block;
+padding: 6px 20px 10px;
+margin-left: -20px;
+font-size: 20px;
+font-weight: 200;
+color: white;
+text-shadow: 0 1px 0 white;
+}
+
+
 .navbar-inner {
 background: #469dee; /* Old browsers */
 background: -moz-linear-gradient(top, #469dee 0%, #1c7cea 100%); /* FF3.6+ */
@@ -176,6 +188,52 @@ cursor: pointer;
 }
 
 
+/* The below CSS is for the form */
+
+input[type="submit"].btn {
+display: inline-block;
+line-height: 20px;
+text-align: center;
+vertical-align: middle;
+cursor: pointer;
+color: white;
+text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+background-color: #4686ee;
+background-image: -webkit-linear-gradient(top, #469dee, #4665ee);
+background-repeat: repeat-x;
+border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+padding: 4px 12px;
+margin-bottom: 0;
+border-radius: 4px;
+-webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+
+}
+
+input[type="submit"].btn:hover{
+  color: white;
+background-color: #4665ee;
+text-decoration: none;
+background-position: 0 -15px;
+-webkit-transition: background-position 0.1s linear;
+}
+
+
+input, textarea, input[type="text"], .uneditable-input {
+height: auto;
+width: 255px;
+}
+
+select {
+width: 269px;
+border: 1px solid #cccccc;
+background-color: white;
+}
+
+
+textarea, .uneditable-input {
+height: auto;
+width: auto;
+}
 
 	padding-top: 60px;
 	color: #333333;
