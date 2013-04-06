@@ -190,6 +190,44 @@ cursor: pointer;
 
 /* The below CSS is for the form */
 
+
+.feedback-container {
+  
+width: 600px;
+height: 470px;
+padding: 15px;
+background-color: #ffffff;
+border-radius: 6px;
+margin-right: auto;
+margin-left: auto;
+}
+
+.feedback-container-modal {
+width: 320px;
+margin-right: auto;
+margin-left: 196px;
+
+}
+
+.feedback-container h2 {
+width: 450px;
+margin-right: auto;
+margin-left: 95px;
+}
+
+.form-inputs {
+  width: 420px;
+height: 310px;
+padding: 0px;
+
+margin-right: auto;
+margin-left: 75px;
+}
+.simple_form label {
+text-align: left;
+}
+
+
 input[type="submit"].btn {
 display: inline-block;
 line-height: 20px;

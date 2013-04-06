@@ -1,27 +1,30 @@
+<div class="front-bg">
+  <img alt="" class="front-image" src="/assets/grumpy_cat.jpeg">
+</div>
+<div class="feedback-container">
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="span3">
+      </div>
+      <div class="span6">
+        
+        <h3> Contact Us! </h3>
+        <p> Please don't hesitate to contact us with any questions, comments or suggestions! </p>
+        <%= simple_form_for @message, :url => contact_path do |f| %>
+            
+            <%= f.input :name, :label => 'Name' %>
+            <%= f.input :email %>         
+            <%= f.input :subject %>
+            <%= f.input :body, as: :text, input_html: { rows: 3 } %>
+            <%= f.button :submit %>
 
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3">
-    </div>
-    <div class="span6">
-      
-CONTACT US AT CONTACT@PROFBACK.COM 
-
-      <%= simple_form_for @message, :url => contact_path do |f| %>
-          
-          <%= f.input :name, :label => 'Name' %>
-          <%= f.input :email %>         
-          <%= f.input :subject %>
-          <%= f.input :body, as: :text, input_html: { rows: 3 } %>
-          <%= f.button :submit %>
-
-      <% end %>
-      
-    </div>
-    <div class="span3">
+        <% end %>
+        
+      </div>
+      <div class="span3">
+      </div>
     </div>
   </div>
 </div>
-
 
 

@@ -1,19 +1,18 @@
 <%= simple_form_for(@prof) do |f| %>
   <%= f.error_notification %>
   
-
-
+ 
       <div class="form-inputs">
         <%= f.input :name, input_html: { cols: 40, rows: 1 }, label: "Professor Name" %>
         <%= f.input :email, :as => :grouped_select, :collection => [['Professors', ['reedcaleb@gmail.com', 'jmn57@georgetown.edu', 'mlz27@georgetown.edu', 'jhm68@georgetown.edu', 'rbk9@georgetown.edu']], ['General', ['Bob', 'John']]], :group_method => :last, label: "Professor Email" %>
-        <%= f.input :pro, as: :text, input_html: { cols: 40, rows: 3 },  label: "What is working?" %>
-        <%= f.input :con, as: :text, input_html: { cols: 40, rows: 3 }, label: "What could be improved?" %>
+        <%= f.input :pro, as: :text, input_html: { cols: 40, rows: 3 },  label: "What is working this week?" %>
+        <%= f.input :con, as: :text, input_html: { cols: 40, rows: 3 }, label: "What could be improved or needs clarification?" %>
         <%= f.button :submit, 'Send to Professor!' %>
         <!--<%= f.submit "Send to Professor!" %>-->
        <p>
        </p>
       </div>
-
+   
       <!--<div class="form-actions">
         
       </div> -->
