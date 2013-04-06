@@ -1,23 +1,14 @@
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-39911380-1', 'profback.com');
-  ga('send', 'pageview');
-
-</script>
 
 <%= simple_form_for(@prof) do |f| %>
   <%= f.error_notification %>
   
  
       <div class="form-inputs">
-        <%= f.input :name, input_html: { cols: 40, rows: 1 }, label: "Professor Name" %>
+        <%= f.input :name, input_html: { cols: 35, rows: 1 }, label: "Professor Name" %>
         <%= f.input :email, :as => :grouped_select, :collection => [['Professors', ['reedcaleb@gmail.com', 'jmn57@georgetown.edu', 'mlz27@georgetown.edu', 'jhm68@georgetown.edu', 'rbk9@georgetown.edu']], ['General', ['Bob', 'John']]], :group_method => :last, label: "Professor Email" %>
-        <%= f.input :pro, as: :text, input_html: { cols: 40, rows: 3 },  label: "What is working this week?" %>
-        <%= f.input :con, as: :text, input_html: { cols: 40, rows: 3 }, label: "What could be improved or needs clarification?" %>
+        <%= f.input :pro, as: :text, input_html: { cols: 35, rows: 3 },  label: "What is working this week?" %>
+        <%= f.input :con, as: :text, input_html: { cols: 35, rows: 3 }, label: "What could be improved or needs clarification?" %>
         <%= f.button :submit, 'Send to Professor!' %>
         <!--<%= f.submit "Send to Professor!" %>-->
        <p>
