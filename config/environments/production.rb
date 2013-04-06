@@ -1,6 +1,7 @@
 Feedbackapp::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
-
+  GA.tracker = "UA-39906688-1"
+  
   # Code is not reloaded between requests
   config.cache_classes = true
 
