@@ -44,7 +44,7 @@ class ProfsController < ApplicationController
 
     respond_to do |format|
       if @prof.save
-        format.html { redirect_to root_path, notice: 'Your feedback has been successfully submitted!' }
+        format.html { redirect_to @prof, notice: 'Your feedback has been successfully submitted!' }
         format.json { render json: @prof, status: :created, location: @prof }
       else
         format.html { render action: "new" }

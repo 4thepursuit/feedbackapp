@@ -18,21 +18,37 @@
 <% @profs.each do |prof| %>
   <tr>
     <!-- current_user -->
-    <td><% if current_user.email == prof.email or 'reedcaleb@gmail.com' %></td>
+    <% if current_user.email == prof.email %>
+    <td></td>
     <td><%= prof.name %></td>
     <td><%= prof.email %></td>
     <td><%= prof.pro %></td>
     <td><%= prof.con %></td>
     <td><%= prof.created_at %></td>
-    <% if current_user.email == 'reedcaleb@gmail.com' %>
     <td><%= link_to 'Show', prof %></td>
-    
     <td><%= link_to 'Edit', edit_prof_path(prof) %></td>
     <td><%= link_to 'Destroy', prof, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    <% end %>
-  </tr>
   <% end %>
+  </tr>
 <% end %>
+
+<% @profs.each do |prof| %>
+  <tr>
+    <!-- current_user -->
+    <% if current_user.email == 'reedcaleb@gmail.com' %>
+    <td></td>
+    <td><%= prof.name %></td>
+    <td><%= prof.email %></td>
+    <td><%= prof.pro %></td>
+    <td><%= prof.con %></td>
+    <td><%= prof.created_at %></td>
+    <td><%= link_to 'Show', prof %></td>
+    <td><%= link_to 'Edit', edit_prof_path(prof) %></td>
+    <td><%= link_to 'Destroy', prof, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  <% end %>
+  </tr>
+<% end %>
+
 </table>
 
 <br />
