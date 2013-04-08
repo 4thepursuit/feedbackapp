@@ -5,8 +5,8 @@
   
  
       <div class="form-inputs">
-        <%= f.input :name, input_html: { cols: 35, rows: 1 }, label: "Professor Name" %>
-        <%= f.input :email, :as => :grouped_select, :collection => [['Professors', ['reedcaleb@gmail.com', 'jmn57@georgetown.edu', 'mlz27@georgetown.edu', 'jhm68@georgetown.edu', 'rbk9@georgetown.edu']], ['General', ['Bob', 'John']]], :group_method => :last, label: "Professor Email" %>
+        <%= f.input :name, input_html: { cols: 35, rows: 1 }, label: "Class and Section" %>
+        <%= f.input :email, :as => :grouped_select, :collection => [['Professor Ferry', ['ben_ferry@hotmail.com']], ['Professor Mayer-Sommer', ['mayersom@georgetown.edu']], ['Professor Skuba', ['cjs29@georgetown.edu']], ['Professor Ulrick', ['swu2@georgetown.edu']]], :group_method => :last, label: "Professor Email" %>
         <%= f.input :pro, as: :text, input_html: { cols: 35, rows: 3 },  label: "What is working this week?" %>
         <%= f.input :con, as: :text, input_html: { cols: 35, rows: 3 }, label: "What could be improved or needs clarification?" %>
         <%= f.button :submit, 'Send to Professor!' %>

@@ -44,7 +44,7 @@ class ProfsController < ApplicationController
 
     respond_to do |format|
       if @prof.save
-        format.html { redirect_to @prof, notice: 'Prof was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Your feedback has been successfully submitted!' }
         format.json { render json: @prof, status: :created, location: @prof }
       else
         format.html { render action: "new" }
@@ -60,7 +60,7 @@ class ProfsController < ApplicationController
 
     respond_to do |format|
       if @prof.update_attributes(params[:prof])
-        format.html { redirect_to @prof, notice: 'Prof was successfully updated.' }
+        format.html { redirect_to @prof, notice: 'Your feedback was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
