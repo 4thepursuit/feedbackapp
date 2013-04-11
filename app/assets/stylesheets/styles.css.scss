@@ -89,6 +89,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#469dee', end
 
 .navbar .nav .active > a, .navbar .nav .active > a:hover {color:white;}
 
+* {
+margin: 0;
+}
+
+
 body{
 
 
@@ -272,7 +277,7 @@ textarea, .uneditable-input {
 height: auto;
 width: auto;
 }
-
+  
 	padding-top: 60px;
 	color: #333333;
 	margin: 0;
@@ -285,6 +290,22 @@ width: auto;
   /*D0E0EB*/
 
 }
+
+html, body {
+height: 100%;
+
+.wrapper {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -142px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .push {
+  height: 142px; /* .push must be the same height as .footer */
+  padding: 0px 0px 0px 7px;
+}
+}
+
 @import 'bootstrap-responsive';
 
  .hero-unit {
@@ -292,12 +313,3 @@ width: auto;
 } 
 
 
-.footer {
-
-	margin-top: 50px;
-
-color: $grayLight;
-a{
-	color: $gray;
-	}
-}

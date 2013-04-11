@@ -10,14 +10,29 @@
 </head>
 <body>
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+	
+<div class="wrapper">
 <%= render 'layouts/header' %>
+
 
 <div class="container">
 	<% flash.each do |name, msg| %>
 	<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
 		<% end %>
-
 	<%= yield %>
+	<div class="push"></div>
+</div>
+</div>
+<div class="footer">
+<%= render 'layouts/footer' %>
 </div>
 </body>
 </html>
