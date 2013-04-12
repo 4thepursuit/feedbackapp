@@ -1,5 +1,5 @@
 class ProfsController < ApplicationController
-before_filter :authenticate_user!, except: [:new, :create]
+before_filter :authenticate_user!, except: [:new, :create, :show, :edit]
 
 
   # GET /profs
