@@ -14,10 +14,14 @@ class ProfsController < ApplicationController
   # GET /profs/1.json
   def show
     @prof = Prof.find(params[:id])
+    
 
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @prof }
+
+      redirect_to root_path, alert: "Thanks for the feedback!"
+      return
     end
   end
 
