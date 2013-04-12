@@ -1,4 +1,7 @@
 class ProfsController < ApplicationController
+before_filter :authenticate_user!, except: [:new, :create]
+
+
   # GET /profs
   # GET /profs.json
   def index
@@ -13,6 +16,7 @@ class ProfsController < ApplicationController
   # GET /profs/1
   # GET /profs/1.json
   def show
+
     @prof = Prof.find(params[:id])
     
 
@@ -22,6 +26,7 @@ class ProfsController < ApplicationController
 
       redirect_to root_path, alert: "Thanks for the feedback!"
       return
+
     end
   end
 
@@ -39,6 +44,10 @@ class ProfsController < ApplicationController
   # GET /profs/1/edit
   def edit
     @prof = Prof.find(params[:id])
+
+     redirect_to root_path, alert: "Thanks for the feedback!"
+      return
+      
   end
 
   # POST /profs
