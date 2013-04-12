@@ -18,7 +18,7 @@
 <% @profs.each do |prof| %>
   <tr>
     <!-- current_user -->
-    <% if current_user.email == prof.email %>
+    <% if current_user.email == Prof.email %>
     <td></td>
     <td><%= prof.name %></td>
     <td><%= prof.email %></td>

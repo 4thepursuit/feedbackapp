@@ -9,7 +9,12 @@
         <%= f.input :email, :as => :grouped_select, :collection => [['Professor Ferry', ['ben_ferry@hotmail.com']], ['Professor Mayer-Sommer', ['mayersom@georgetown.edu']], ['Professor Skuba', ['cjs29@georgetown.edu']], ['Professor Ulrick', ['swu2@georgetown.edu']]], :group_method => :last, label: "Professor Email" %>
         <%= f.input :pro, as: :text, input_html: { cols: 35, rows: 3 },  label: "What is working this week?" %>
         <%= f.input :con, as: :text, input_html: { cols: 35, rows: 3 }, label: "What could be improved or needs clarification?" %>
-        <%= f.button :submit, 'Send to Professor!' %>
+
+        <%= button_tag(type: 'submit', class: "btn btn-primary", link_to 'Home', root_path, :method => :post) do %>
+            <i class="icon-ok icon-white"></i> Send to Professor! 
+          <% end %>
+
+        <!--<%= f.button :submit, 'Send to Professor!' %>-->
         <!--<%= f.submit "Send to Professor!" %>-->
        <p>
        </p>
